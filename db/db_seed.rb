@@ -15,7 +15,7 @@ db.execute("DELETE FROM fruits")  # Rensa tabellen först
 fruits = [
   ['Äpple',10], 
   ['Banan',20], 
-  ['Apelsin',30], 
+  ['Apelsin',3000], 
   ['Päron',40]
 ]
 

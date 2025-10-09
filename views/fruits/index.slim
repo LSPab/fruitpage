@@ -1,0 +1,21 @@
+h1 What will you find hmmm??
+
+form action="/fruits" method="get"
+    input name="q" placeholder="do whatever you want" type="text"
+     input type="submit" value="sök!"
+
+h1 Add your own fruit
+<a href="/fruits/new">Add</a>
+
+
+h1 Alla frukter 
+
+- @databased.each do |fruit|
+    h2 = fruit["name"]
+    p Det finns #{fruit["amount"]}st
+    
+    form action="/fruits/#{fruit["id"]}/delete" method="post"
+        input type="submit" value="Kill This Man Pookie 😘"/
+    hr
+    
+
