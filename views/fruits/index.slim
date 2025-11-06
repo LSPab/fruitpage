@@ -11,11 +11,14 @@ h1 Add your own fruit
 h1 Alla frukter 
 
 - @databased.each do |fruit|
-    h2 = fruit["name"]
+    h2
+        a href="/fruits/#{fruit["id"]}/edit" 
+            | #{fruit["name"]}
+
     p Det finns #{fruit["amount"]}st
     
     form action="/fruits/#{fruit["id"]}/delete" method="post"
-        input type="submit" value="Kill This Man Pookie 😘"/
+        input type="submit" value="Kill This Man, Pookie 😘"/
     hr
     
 
